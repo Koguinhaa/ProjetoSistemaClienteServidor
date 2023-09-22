@@ -35,7 +35,7 @@ public class MediaController {
 
     @GetMapping("/imc/{notaA1}/{notaA2}")
     public String calcularImc(@PathVariable double notaA1, @PathVariable double notaA2, ModelMap model){
-        double imcFinal = (notaA1 / notaA2);
+        double imcFinal = (notaA1 / (notaA2*notaA2));
         model.addAttribute("imcFinal", imcFinal);
         model.addAttribute("chamada", chamada);
         return "imc";

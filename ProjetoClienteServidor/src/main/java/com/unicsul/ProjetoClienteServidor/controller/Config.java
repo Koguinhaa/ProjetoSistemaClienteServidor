@@ -9,7 +9,7 @@ public class Config {
     @Bean (name = "chamada")
     public String chamada(){
         String chamada = "O IMC é 20.5";
-        return "O IMC é 20.5";
+        return "Esse é o seu IMC";
     }
 
     @Bean (name = "appChamada")

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjetoCliente/Servidor</title>
+</head>
+<body>
+
+    <h1><span th:text="${appChamada}"></span></h1>
+
+    <h2>Home</h2>
+    <h3>Integrantes</h3>
+    <ul>
+        <li>Nome: <b>Gabriel Chaves Medeiro</b> || RGM: <b>29751161</b></li>
+        <li>Nome: <b>Guilherme Koga Pereira</b> || RGM: <b>29678056</b></li>
+        <li>Nome: <b>Lucas do Santos Antunes</b> || RGM: <b>29682231</b></li>
+    </ul><br>
+    <b>Link do github: </b><a href="https://github.com/GCMedeiro/ProjetoClienteServidor.git">LinkDoRepositorio</a>
+    <h2>Projeto Cliente Servidor</h2>
+    <p>Neste projeto utilizamos de recursos do spring para criação de 3 rotas + página home no endereço " localhost:3500 "</p><br>
+    <h3>Como usar as rotas</h3>
+    <h4>Rota bemvindo</h4>
+    <p>Para utilização da rota bemvindo basta acessar do localhost e adicionar a rota "/bemvindo" e passar um parametro pela barra de endereço com o seu nome.</p>
+    <p><b>Exemplo:</b> localhost:3500/bemvindo/(seu_nome)</p>
+    <br>
+    <h4>Rota de IMC</h4>
+    <p>Para utilização da rota de IMC, basta colocar o valor do peso em kg e o valor em da altura em metros, acessar localhost e adicionar a rota "/imc" e adicionar duas notas.</p>
+    <p><b>Exemplo:</b> localhost:3500/imc/(peso)/(altura)</p>
+    <br>
+    <h4>Rota de Raíz</h4>
+    <p>Para utilizar a rota de calculo da raiz, acesse localhost e adicione a rota "/raiz" e ao lado o número que deseja realizar a conta.</p>
+    <p><b>Exemplo:</b> localhost:3500/raiz/(numero)</p>
+
+
+<!-- Inserir a mensagem da configuração no HTML -->
+</body>
+</html>
